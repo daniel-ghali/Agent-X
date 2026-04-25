@@ -199,6 +199,7 @@ export type Database = {
           created_at: string | null
           id: string
           language_preference: string | null
+          system_prompt_override: string | null
         }
         Insert: {
           business_name: string
@@ -207,6 +208,7 @@ export type Database = {
           created_at?: string | null
           id: string
           language_preference?: string | null
+          system_prompt_override?: string | null
         }
         Update: {
           business_name?: string
@@ -215,6 +217,7 @@ export type Database = {
           created_at?: string | null
           id?: string
           language_preference?: string | null
+          system_prompt_override?: string | null
         }
         Relationships: []
       }

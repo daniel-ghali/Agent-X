@@ -6,6 +6,7 @@ CREATE TABLE public.profiles (
   business_name TEXT NOT NULL,
   language_preference TEXT DEFAULT 'ar',
   chatbot_tone TEXT DEFAULT 'friendly',
+  system_prompt_override TEXT DEFAULT NULL,
   created_at TIMESTAMPTZ DEFAULT now()
 );
 
